@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--以上是注释，这个声明必须放在第一行！-->
+<users>
+    <user id="1">
+        kobe
+    </user>
+    <sex>
+        man
+    </sex>
+    <value>
+        MVP
+    </value>
+
+    <user id="2">
+        SGA
+    </user>
+    <sex>
+        man
+    </sex>
+    <value>
+         NEW MVP
+    </value>
+
+</users>

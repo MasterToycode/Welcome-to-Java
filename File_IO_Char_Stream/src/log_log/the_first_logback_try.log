@@ -1,0 +1,8 @@
+2024-02-28 17:20:22,524 302  [main] INFO  LogBackTest - CHU is start!
+2024-02-28 17:20:22,526 304  [main] DEBUG LogBackTest - a: 10
+2024-02-28 17:20:22,526 304  [main] DEBUG LogBackTest - b: 0
+2024-02-28 17:20:22,526 304  [main] ERROR LogBackTest - CHU is wrong!
+2024-02-28 17:21:31,806 317  [main] INFO  LogBackTest - CHU is start!
+2024-02-28 17:21:31,807 318  [main] DEBUG LogBackTest - a: 10
+2024-02-28 17:21:31,808 319  [main] DEBUG LogBackTest - b: 0
+2024-02-28 17:21:31,808 319  [main] ERROR LogBackTest - CHU is wrong!
