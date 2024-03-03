@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <!--consoleAppender: 输出日志到控制台！ -->
+        <encoder>
+            <charset>UTF-8</charset>
+            <Pattern>%d %-4relative [%thread] %-5level %logger{35} - %msg%n</Pattern>
+            <!--控制输出格式 -->
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <file>D:/不会编程/Java/Thread_m/src/log_log/Thread.log</file>
+        <!--说明日志保存的地址！！-->
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover. Make sure the path matches the one in the file element or else
+             the rollover logs are placed in the working directory. -->
+            <fileNamePattern>/srv/logs/application_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- 指定日志压缩的文件名称，来确定分割大小！！-->
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>5MB</maxFileSize>
+
+
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <!-- keep 30 days' worth of history -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d %-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="DEBUG">
+        <!--
+                          日志级别：
+                          trace
+                          debug
+                          info
+                          warn
+                          error
+
+                          大于或者等于配置文件中设置的日志级别，系统才会记录！！
+                          -->
+        <!-- 控制日志的开启和取消！！   -->
+        <appender-ref ref="consoleAppender" /> <!--指定输出到控制台 -->
+        <appender-ref ref="FILE"/> <!--指定输出到文件夹 -->
+    </root>
+</configuration>
