@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;database=class_do;trustServerCertificate=true;characterEncoding=UTF-8
+    username: sa
+    password: Skywalker248
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    type:
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
